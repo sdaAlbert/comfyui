@@ -3,9 +3,9 @@ requires = ["setuptools>=45", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "comfyui-custom-nodes"
+name = "comfyui-mesh-nodes"
 version = "0.1.0"
-description = "Custom nodes for ComfyUI"
+description = "Mesh generation and processing nodes for ComfyUI"
 readme = "README.md"
 license = {text = "MIT"}
 authors = [

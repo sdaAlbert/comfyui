@@ -10,7 +10,24 @@ This package provides powerful mesh generation and processing nodes for ComfyUI,
 
 ## Installation
 
-### Option 1: Clone to ComfyUI custom_nodes folder
+### 🚀 Online Platforms (liblib.ai, Runpod, Colab)
+
+**Method 1: ComfyUI Manager (Recommended)**
+1. Open ComfyUI Manager
+2. Click "Install via Git URL"  
+3. Enter: `https://github.com/sdaAlbert/comfyui.git`
+4. Restart ComfyUI
+
+**Method 2: Manual Git Clone**
+```bash
+cd ComfyUI/custom_nodes
+git clone https://github.com/sdaAlbert/comfyui.git comfyui-mesh-nodes
+python comfyui-mesh-nodes/install.py
+```
+
+📋 **Detailed guide**: See [INSTALL.md](INSTALL.md) for platform-specific instructions
+
+### 🖥️ Local Installation
 
 ```bash
 cd ComfyUI/custom_nodes
@@ -18,12 +35,6 @@ git clone https://github.com/sdaAlbert/comfyui.git comfyui-mesh-nodes
 cd comfyui-mesh-nodes
 pip install -r requirements.txt
 ```
-
-### Option 2: Download and extract
-
-1. Download the repository as ZIP
-2. Extract to `ComfyUI/custom_nodes/comfyui-mesh-nodes/`
-3. Install dependencies: `pip install -r requirements.txt`
 
 ## Usage
 

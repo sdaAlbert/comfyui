@@ -1,0 +1,26 @@
+{
+    "custom_nodes": [
+        {
+            "author": "Albert",
+            "title": "ComfyUI Mesh Generation Nodes",
+            "id": "https://github.com/sdaAlbert/comfyui",
+            "reference": "https://github.com/sdaAlbert/comfyui",
+            "files": [
+                "https://github.com/sdaAlbert/comfyui"
+            ],
+            "install_type": "git-clone",
+            "description": "Generate and process 3D meshes within ComfyUI workflows. Includes primitive mesh generation (cube, sphere, cylinder, cone, plane, torus), mesh transformations, and export to standard formats (OBJ, PLY).",
+            "category": "mesh_generation",
+            "node_list": [
+                "PrimitiveMeshGenerator",
+                "MeshTransform", 
+                "MeshExporter"
+            ],
+            "node_names": [
+                "Primitive Mesh Generator",
+                "Mesh Transform",
+                "Mesh Exporter"
+            ]
+        }
+    ]
+}

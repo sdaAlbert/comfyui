@@ -9,10 +9,11 @@ description = "Mesh generation and processing nodes for ComfyUI"
 readme = "README.md"
 license = {text = "MIT"}
 authors = [
-    {name = "Your Name", email = "your.email@example.com"}
+    {name = "Albert", email = "albert@example.com"}
 ]
+keywords = ["comfyui", "mesh", "3d", "generation", "nodes"]
 classifiers = [
-    "Development Status :: 3 - Alpha",
+    "Development Status :: 4 - Beta",
     "Intended Audience :: Developers",
     "License :: OSI Approved :: MIT License",
     "Programming Language :: Python :: 3",
@@ -20,18 +21,35 @@ classifiers = [
     "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
+    "Topic :: Multimedia :: Graphics :: 3D Modeling",
+    "Topic :: Scientific/Engineering :: Visualization",
 ]
 requires-python = ">=3.8"
 dependencies = [
     "torch>=1.12.0",
     "numpy>=1.19.0",
-    "pillow>=8.3.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=6.0",
+    "black",
+    "flake8",
 ]
 
 [project.urls]
 Homepage = "https://github.com/sdaAlbert/comfyui"
 Repository = "https://github.com/sdaAlbert/comfyui.git"
 Issues = "https://github.com/sdaAlbert/comfyui/issues"
+Documentation = "https://github.com/sdaAlbert/comfyui#readme"
 
 [tool.setuptools]
 packages = ["."]
+
+# ComfyUI Manager metadata
+[tool.comfyui]
+title = "ComfyUI Mesh Generation Nodes"
+reference = "https://github.com/sdaAlbert/comfyui"
+files = ["https://github.com/sdaAlbert/comfyui.git"]
+install_type = "git-clone"
+description = "Generate and process 3D meshes within ComfyUI workflows"
